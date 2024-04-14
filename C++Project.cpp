@@ -1,15 +1,16 @@
-This is simple banking system that allows you to :
+/*  This is simple banking system that allows you to :
           - Create Account 
           - Perform Deposit
-          - Perform withdraw  \n
-          - View Account Balance.\n
-          - change password \n
+          - Perform withdraw  
+          - View Account Balance.
+          - change password
     Developed by :
           => Hailemeskel Getaneh
           => Hailemariam Adane
           => Halid Faruk
           => Hailu Kassa
           => Natnael Bekele
+   */
 
 
 #include <iostream>
@@ -77,7 +78,7 @@ while (true)
                  newAccount.balance = 0.0;
 
                 accounts[numAccounts] = newAccount;
-                cout << " âœ…ï¸. Account created successfully!\n";
+                cout << "  Account created successfully!\n";
                 numAccounts++;
             }
          }
@@ -108,16 +109,16 @@ else if (choice == 2)
                                   cout << "Enter the  deposit amount: ";
                                   cin >> amount;
                                     accounts[accountIndex].balance += amount;
-                                    cout << "âœ…ï¸.  Deposit successful!\n";
+                                    cout << " Deposit successful!\n";
                               }
                          else
                              {
-                                  cout<<" âš ï¸  incorrrectpassword\a"<<endl;
+                                  cout<<" incorrrectpassword\a"<<endl;
                             }
                     }
                else
                        {
-                           cout << "âš ï¸ Account not found\a\n";
+                           cout << " Account not found\a\n";
                            break;
                        }
               } 
@@ -150,21 +151,21 @@ else if (choice == 3)
                                     if (amount <= accounts[accountIndex].balance)
                                            {
                                                accounts[accountIndex].balance -= amount;
-                                              cout << "âœ…ï¸. Withdrawal successful!\n";
+                                              cout << " Withdrawal successful!\n";
                                           }  
                                   else 
                                          {
-                                              cout << " âš ï¸. Insufficient balance for withdrawal.\n\a";
+                                              cout << "  Insufficient balance for withdrawal.\n\a";
                                         }
                                  }
                           else
                                 {
-                                   cout<<" âš ï¸  incorrrectpassword\a"<<endl;
+                                   cout<<"  incorrrectpassword\a"<<endl;
                                }
                     }
                else
                        {
-                           cout << " âš ï¸ Account not found.\a\n";
+                           cout << " Account not found.\a\n";
                        }
            } 
               
@@ -195,12 +196,12 @@ else if (choice == 3)
                                             }
                                      else
                                          {
-                                              cout<<" âš ï¸  incorrrectpassword\a"<<endl;
+                                              cout<<" incorrrectpassword\a"<<endl;
                                         }
                                } 
                    else 
                            {
-                                     cout << "âš ï¸ Account not found.\a\n";
+                                     cout <<  Account not found.\a\n";
                                }
               } 
               
@@ -239,17 +240,17 @@ else if (choice == 5) //to change password by accepting and accountNumber and th
                                      if( accounts[accountIndex].password == changedpassword)    
                                            {
                                                accounts[accountIndex].password = changedpassword;
-                                               cout << "âœ…ï¸.  password changed successful!\n";
+                                               cout <<  password changed successful!\n";
                                            }
                                     else
                                         {
-                                             cout<<" âš ï¸ you entered two different new passwords\a"<<endl;
+                                             cout<<" you entered two different new passwords\a"<<endl;
                                         }
                                 }
                   }        
                else
                        {
-                           cout << "âŒï¸ Account not found.\a\n";
+                           cout << "Account not found.\a\n";
                            break;
                        }
        }
